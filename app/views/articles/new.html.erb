@@ -1,0 +1,20 @@
+<h1>Articles#new</h1>
+<%= form_with model: @game do |f| %>
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+    <div>
+      <%= f.label :sport %>
+      <%= f.text_field :sport %>
+    </div>
+    <div>
+      <%= f.label : price%>
+      <%= f.text_field :price %>
+    </div>
+    <div>
+      <%= f.label :description %>
+      <%= f.text_field :description %>
+      <%= f.submit %>
+    </div>
+<% end %>
